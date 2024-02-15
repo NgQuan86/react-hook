@@ -1,22 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './component/nav';
 
 function App() {
+
+  let title = 'React Hook';
+  let obj = { name: 'Ng', number: 20 };
+  let link = 'http://www.google.com';
+
+
   return (
     <div className="App">
+      <Nav />
+
+
+      {console.log('check object', obj)}
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Hello world  with {title}</h1>
+        <a href={link} target="_blank" >visit my site</a>
+
       </header>
     </div>
   );
